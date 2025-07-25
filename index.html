@@ -23,7 +23,7 @@
   <!-- top bar section start -->
   
 
-    <section class="top-bar flex items-center justify-between text-xs py-2 px-10 bg-black text-white">
+    <section class="top-bar hidden sm:flex items-center justify-between text-xs py-2 px-10 bg-black text-white">
               <div class="top-left">
                     <ul class="flex items-center gap-5">
                         <li>About Us</li>
@@ -44,31 +44,31 @@
 
     <!-- nav middle section start -->
      
-    <section class="nav-middle bg-black text-white">
+    <section class="nav-middle bg-black text-white py-4 px-10 hidden sm:block">
             <nav class="grid grid-cols-4">
                   <div class="left">
 
 
                   </div>
-                  <div class="middle col-span-2">
-                    <div class="search flex bg-white text-black mx-12 px-4">
-                        <input type="text" name="" id="" class="w-[100%] border-none  outline-none">
-                        <button><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></button>
+                  <div class="middle col-span-2 ">
+                    <div class="search flex bg-white text-black mx-12 px-4 rounded-full">
+                        <input placeholder="Search your product" type="text" name="" id="" class="w-[100%] border-none  outline-none text-xs">
+                        <button class="bg-[#e04a5c] text-white rounded-full p-2 text-sm  m-1"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></button>
                     </div>
 
                   </div>
-                  <div class="right flex items-center justify-between">
-                      <div class="left flex items-center justify-center">
-                             <i class="fa-solid fa-phone"></i>
+                  <div class="right flex items-center justify-between text-sm">
+                      <div class="left flex items-center justify-center gap-3">
+                             <i class="fa-solid fa-phone text-2xl"></i>
                             <div class="title">
                                 <p>Hotline 24/7</p>
-                                <p>+0000000</p>
+                                <p class="text-[#ffffffcc]">+0000000</p>
                             </div>
                       </div>
-                      <div class="right flex items-center justify-center">
-                              <i class="fa-solid fa-cart-shopping"></i>
+                      <div class="right flex items-center justify-center gap-3">
+                              <i class="fa-solid fa-cart-shopping text-2xl"></i>
                                 <div class="title">
-                                <p>$0.00</p>
+                                <p class="text-[#e04a5c]">$0.00</p>
                                 <p>0 items</p>
                             </div>
                       </div>  
@@ -77,5 +77,23 @@
     </section>
 
     <!-- nav middle section end -->
+
+
+
+
+    <!-- Navbar for mobile device -->
+
+    <section class="mobile-nav grid grid-cols-4 items-center justify-center bg-black py-4 px-3 sm:hidden">
+         <div class="left text-white text-2xl ">
+                <i class="fa-solid fa-bars"></i>
+         </div>
+         <div class="middle col-span-2 text-white text-center">
+                 logo
+         </div>
+         <div class="right flex items-center justify-center gap-4 text-white text-2xl ">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-user"></i>
+         </div>
+    </section>
 </body>
 </html>
